@@ -12,6 +12,9 @@ const ROLES = [
   "TypeScript Enthusiast",
 ];
 
+/** Replace with your Google Doc link: File → Share → “Anyone with the link” → copy link */
+const RESUME_LINK = "https://drive.google.com/drive/u/0/folders/1kfgG6amycHWxhumurowB8c4A61k7KT7u";
+
 export default function Hero() {
   const [roleIndex, setRoleIndex] = useState(0);
   const [displayText, setDisplayText] = useState("");
@@ -264,7 +267,7 @@ export default function Hero() {
               View My Work
             </button>
             <a
-              href="https://drive.google.com/file/d/1FsJid8fouiT8NqPsmO1aeWqIl8UXKmPB/view?usp=drive_link"
+              href={RESUME_LINK}
               target="_blank"
               rel="noopener noreferrer"
               style={{
