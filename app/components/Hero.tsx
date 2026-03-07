@@ -14,7 +14,7 @@ const ROLES = [
 
 /** Replace with your Google Doc link: File → Share → “Anyone with the link” → copy link */
 const RESUME_LINK =
-  "https://drive.google.com/file/d/14n0jfzH3IiLtLeWGSArjlukY5aI-cHvl/view?usp=sharing";
+  "https://drive.google.com/file/d/1XbB1Z4YDtZV7XGUzi5a5j-ATwkYYYpvC/view?usp=sharing";
 
 export default function Hero() {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -229,8 +229,8 @@ export default function Hero() {
             color="rgba(255,255,255,0.4)"
             lineHeight="1.8"
           >
-            2.5+ years architecting high-scale React.js, Next.js, and TypeScript applications
-            for fintech and healthtech. Expert in Core Web Vitals, browser rendering optimization,
+            3+ years architecting high-scale React.js, Next.js, and TypeScript applications
+            for CRM and Hospitality Tech domains. Expert in Core Web Vitals, browser rendering optimization,
             and delivering measurable performance outcomes.
           </Text>
         </MotionBox>
@@ -263,6 +263,8 @@ export default function Hero() {
                 border: "none",
                 width: "100%",
                 maxWidth: "220px",
+                whiteSpace: "nowrap",
+                flexShrink: 0,
               }}
             >
               View My Work
@@ -288,9 +290,11 @@ export default function Hero() {
                 justifyContent: "center",
                 width: "100%",
                 maxWidth: "220px",
+                whiteSpace: "nowrap",
+                flexShrink: 0,
               }}
             >
-              <Download size={16} />
+              <Download size={16} style={{ flexShrink: 0 }} />
               Download Resume
             </a>
           </Flex>
@@ -306,7 +310,7 @@ export default function Hero() {
           <Flex gap="3" mt="2">
             {[
               { icon: <Github size={18} />, href: "https://github.com/anjalimadd", label: "GitHub" },
-              { icon: <Linkedin size={18} />, href: "https://www.linkedin.com/in/anjali-maddeshiya-986248183/", label: "LinkedIn" },
+              { icon: <Linkedin size={18} />, href: "https://www.linkedin.com/in/anjali-maddeshiya/", label: "LinkedIn" },
               { icon: <Mail size={18} />, href: "mailto:anjalimadd.dev@gmail.com", label: "Email" },
             ].map((s) => (
               <a

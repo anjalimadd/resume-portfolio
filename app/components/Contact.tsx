@@ -7,7 +7,7 @@ import { Send, MapPin, Mail, Phone, Github, Linkedin, Loader2 } from "lucide-rea
 
 const SOCIAL_LINKS = [
   { icon: <Github size={20} />, label: "GitHub", href: "https://github.com/anjalimadd", color: "#a78bfa" },
-  { icon: <Linkedin size={20} />, label: "LinkedIn", href: "https://www.linkedin.com/in/anjali-maddeshiya-986248183/", color: "#6366f1" },
+  { icon: <Linkedin size={20} />, label: "LinkedIn", href: "https://www.linkedin.com/in/anjali-maddeshiya/", color: "#6366f1" },
   { icon: <Mail size={20} />, label: "Email", href: "mailto:anjalimadd.dev@gmail.com", color: "#2dd4bf" },
 ];
 

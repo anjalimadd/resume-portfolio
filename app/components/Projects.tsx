@@ -13,7 +13,6 @@ const PROJECTS = [
     title: "Multi-Workspace CRM PWA",
     description:
       "Multi-workspace CRM PWA with Next.js 15, React 19, and TypeScript, streamlining a GraphQL data layer that accelerated feature release cadence by 30% across all active workspaces.",
-    image: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
     tags: [
       "Next.js",
       "React 19",
@@ -29,7 +28,6 @@ const PROJECTS = [
     title: "Hotel Management Admin Dashboard",
     description:
       "High-traffic SSR-based dashboard managing bookings, inventory, and reporting modules.",
-    image: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
     tags: [
       "Next.js",
       "Redux Toolkit",
@@ -46,7 +44,6 @@ const PROJECTS = [
     title: "High-Performance Data Tables Engine",
     description:
       "Virtualized Kanban boards and data tables handling 10,000+ records using TanStack Table and TanStack Virtual, implemented batch  ed GraphQL with optimistic UI updates, cutting API calls by 35% and boosting perceived interaction speed by 40%.",
-    image: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
     tags: [
       "React.js",
       "TypeScript",
@@ -63,7 +60,6 @@ const PROJECTS = [
     title: "SSR Hotel Admin Migration",
     description:
       "Led CSR-to-SSR migration of core hotel admin modules in Next.js, implementing server-side caching and next/image optimization that reduced initial page load time by 20% and improved Lighthouse performance scores",
-    image: "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
     tags: [
       "Next.js",
       "SSR",
@@ -79,8 +75,12 @@ const PROJECTS = [
     title: "Real-Time Messaging System",
     description:
       "Built WhatsApp messaging and Notes modules with Lexical editor, media handling, read receipts, and emoji reactions, increasing user engagement by 25%",
-    image: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
-    tags: ["WebSockets", "GraphQL subscriptions", "Live Updates", "Cache Synchronization"],
+    tags: [
+      "WebSockets",
+      "GraphQL subscriptions",
+      "Live Updates",
+      "Cache Synchronization",
+    ],
     category: "SaaS",
     github: "https://github.com/anjalimadd",
     live: "#",
@@ -89,11 +89,10 @@ const PROJECTS = [
     title: "Portfolio Website",
     description:
       "This premium dark-themed portfolio built with Next.js 16, Chakra UI v3, and Framer Motion with interactive animations.",
-    image: "linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%)",
     tags: ["Next.js", "Chakra UI", "Framer Motion", "TypeScript"],
     category: "Web",
     github: "https://github.com/anjalimadd/resume-portfolio",
-    live: "https://portfolio.ankitvars.dev",
+    live: "https://portfolio-anjali-maddeshiya.vercel.app/",
   },
 ];
 
@@ -227,91 +226,62 @@ export default function Projects() {
                   position="relative"
                   role="group"
                 >
-                  {/* Image / Gradient Preview */}
-                  <Box
-                    h="180px"
-                    bg={project.image}
-                    position="relative"
-                    overflow="hidden"
-                  >
-                    {/* Hover Overlay */}
-                    <Flex
-                      position="absolute"
-                      inset="0"
-                      bg="rgba(0,0,0,0.6)"
-                      backdropFilter="blur(4px)"
-                      align="center"
-                      justify="center"
-                      gap="3"
-                      opacity="0"
-                      transition="opacity 0.3s"
-                      _groupHover={{ opacity: 1 }}
-                    >
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        style={{
-                          padding: "12px",
-                          borderRadius: "50%",
-                          background: "rgba(255,255,255,0.1)",
-                          color: "white",
-                          transition: "all 0.2s",
-                          display: "inline-flex",
-                          alignItems: "center",
-                          justifyContent: "center",
-                        }}
-                      >
-                        <Github size={18} />
-                      </a>
-                      <a
-                        href={project.live}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        style={{
-                          padding: "12px",
-                          borderRadius: "50%",
-                          background: "rgba(255,255,255,0.1)",
-                          color: "white",
-                          transition: "all 0.2s",
-                          display: "inline-flex",
-                          alignItems: "center",
-                          justifyContent: "center",
-                        }}
-                      >
-                        <ExternalLink size={18} />
-                      </a>
-                    </Flex>
-
-                    {/* Corner badge */}
-                    <Box
-                      position="absolute"
-                      top="3"
-                      right="3"
-                      px="3"
-                      py="1"
-                      borderRadius="full"
-                      bg="rgba(0,0,0,0.4)"
-                      backdropFilter="blur(10px)"
-                      fontSize="xs"
-                      fontWeight="600"
-                      color="rgba(255,255,255,0.8)"
-                    >
-                      {project.category}
-                    </Box>
-                  </Box>
-
                   {/* Card Content */}
                   <Flex direction="column" p="5" gap="3" flex="1">
-                    <Flex align="center" justify="space-between">
-                      <Text fontWeight="700" fontSize="md" color="white">
-                        {project.title}
-                      </Text>
-                      <ArrowUpRight
-                        size={16}
-                        color="rgba(255,255,255,0.3)"
-                        style={{ transition: "all 0.3s" }}
-                      />
+                    <Flex align="center" justify="space-between" flexWrap="wrap" gap="2">
+                      <Flex align="center" gap="2">
+                        <Text fontWeight="700" fontSize="md" color="white">
+                          {project.title}
+                        </Text>
+                        <Box
+                          px="2.5"
+                          py="0.5"
+                          borderRadius="full"
+                          bg="rgba(0,0,0,0.3)"
+                          fontSize="xs"
+                          fontWeight="600"
+                          color="rgba(255,255,255,0.8)"
+                        >
+                          {project.category}
+                        </Box>
+                      </Flex>
+                      <Flex align="center" gap="2">
+                        <a
+                          href={project.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{
+                            padding: "6px",
+                            borderRadius: "8px",
+                            background: "rgba(255,255,255,0.06)",
+                            color: "rgba(255,255,255,0.6)",
+                            transition: "all 0.2s",
+                            display: "inline-flex",
+                          }}
+                        >
+                          <Github size={14} />
+                        </a>
+                        <a
+                          href={project.live}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{
+                            padding: "6px",
+                            borderRadius: "8px",
+                            background: "rgba(255,255,255,0.06)",
+                            color: "rgba(255,255,255,0.6)",
+                            transition: "all 0.2s",
+                            display: "inline-flex",
+                          }}
+                        >
+                          <ExternalLink size={14} />
+                        </a>
+                        <ArrowUpRight
+                          size={16}
+                          color="rgba(255,255,255,0.3)"
+                          style={{ transition: "all 0.3s" }}
+                        />
+                      </Flex>
                     </Flex>
                     <Text fontSize="sm" color="rgba(255,255,255,0.4)" lineHeight="1.7" flex="1">
                       {project.description}

@@ -41,7 +41,7 @@ export default function Footer() {
               className="gradient-text"
               fontFamily="'Space Grotesk', sans-serif"
             >
-              {"<AV />"}
+              {"<AM />"}
             </Text>
             <Text fontSize="xs" color="rgba(255,255,255,0.3)">
               Crafting digital experiences
@@ -72,7 +72,7 @@ export default function Footer() {
           <Flex align="center" gap="3">
             {[
               { icon: <Github size={15} />, href: "https://github.com/anjalimadd" },
-              { icon: <Linkedin size={15} />, href: "https://www.linkedin.com/in/anjali-maddeshiya-986248183/" },
+              { icon: <Linkedin size={15} />, href: "https://www.linkedin.com/in/anjali-maddeshiya/" },
               { icon: <Mail size={15} />, href: "mailto:anjalimadd.dev@gmail.com" },
             ].map((s, i) => (
               <a

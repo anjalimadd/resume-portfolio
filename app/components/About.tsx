@@ -163,7 +163,7 @@ export default function About() {
                   lineHeight="1.9"
                   fontSize="sm"
                 >
-                  Frontend Engineer with 2.5+ years architecting
+                  Frontend Engineer with 3+ years architecting
                   high-scale React.js, Next.js, and TypeScript applications for
                   CRM and Hospitality Tech domains. Proven track record of
                   delivering measurable outcomes: 40% faster page loads, 35% SEO

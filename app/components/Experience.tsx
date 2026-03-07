@@ -49,6 +49,19 @@ const EXPERIENCES = [
       "Built an automated asset optimization pipeline with WebP image conversion and intersection-observer lazy loading, lifting mobile Lighthouse Performance scores by 25 points across key device profiles",
     ],
   },
+  {
+    company: "CS Mock",
+    role: "Frontend Developer Intern",
+    period: "Jan 2023 — Apr 2023",
+    location: "Noida, India",
+    color: "#f59e0b",
+    description:
+      "Assisted in building an EdTech platform with React.js and Redux.",
+    highlights: [
+      "Assisted in building an EdTech platform with React.js and Redux, designed reusable components, debugged UI issues, and improved load time ",
+      "Ensured cross-browser support and code quality with senior dev guidance, Participated in stand-ups, reviews, and agile processes to ship faster releases",
+    ],
+  },
 ];
 
 export default function Experience() {
