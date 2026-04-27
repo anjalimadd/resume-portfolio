@@ -91,8 +91,8 @@ const PROJECTS = [
       "This premium dark-themed portfolio built with Next.js 16, Chakra UI v3, and Framer Motion with interactive animations.",
     tags: ["Next.js", "Chakra UI", "Framer Motion", "TypeScript"],
     category: "Web",
-    github: "https://github.com/anjalimadd/resume-portfolio",
-    live: "https://portfolio-anjali-maddeshiya.vercel.app/",
+  github: "https://github.com/anjalimadd",
+    live: "#"
   },
 ];
 
